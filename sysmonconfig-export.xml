@@ -45,9 +45,11 @@
 			<!--SECTION: Drivers-->
 			<Image condition="begin with">C:\Program Files\NVIDIA Corporation\Display\</Image> <!--Nvidia:Driver: routine actions-->
 			<Image condition="begin with">C:\Program Files\Realtek\</Image>  <!--Realtek:Driver: routine actions-->
-			<!-- SECTION: McAfee -->
-			<!-- <Image condition="begin with">C:\Program Files (x86)\McAfee\Common Framework</Image> --> <!-- McAfee:Framework Stops all framework actions from reporting || Contributor @Darkbat91 -->
-			<!-- <ParentImage condition="Image">C:\Program Files (x86)\McAfee\Common Framework\naPrdMgr.exe</ParentImage> --> <!-- McAfee:Scans Stops engine and scans from reporting || Contributor @Darkbat91 -->
+			<!-- SECTION: My Company -->
+			<Image condition="image">C:\Program Files\Centero\Agent\Agent.exe</Image> <!--> Centero Agent -->
+			<Image condition="image">C:\Program Files (x86)\Common Files\SupportSoft\bin\bcont_nm.exe</Image> <!--> Optibot -->
+			<Image condition="image">C:\Program Files (x86)\OptiBot\bin\sprtcmd.exe</Image> <!--> Optibot 2 -->
+			<Image condition="image">C:\Program Files\Palo Alto Networks\GlobalProtect\PanGpHip.exe</Image> <!--> Palo Alto Global Protect -->
 		</ProcessCreate>
 
 	<!--SYSMON EVENT ID 2 : FILE CREATION TIME RETROACTIVELY CHANGED IN THE FILESYSTEM -->
