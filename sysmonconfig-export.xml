@@ -49,7 +49,8 @@
 			<Image condition="image">C:\Program Files\Centero\Agent\Agent.exe</Image> <!--> Centero Agent -->
 			<Image condition="image">C:\Program Files (x86)\Common Files\SupportSoft\bin\bcont_nm.exe</Image> <!--> Optibot -->
 			<Image condition="image">C:\Program Files (x86)\OptiBot\bin\sprtcmd.exe</Image> <!--> Optibot 2 -->
-			<Image condition="image">C:\Program Files\Palo Alto Networks\GlobalProtect\PanGpHip.exe</Image> <!--> Palo Alto Global Protect -->
+			<Image condition="begin with">C:\Program Files\Palo Alto Networks\GlobalProtect</Image> <!--> Palo Alto Global Protect -->
+			<Image condition="begin with">C:\Program Files\Microsoft Security Client</Image> <!--Microsoft:Windows:SCEP in Win7-->
 		</ProcessCreate>
 
 	<!--SYSMON EVENT ID 2 : FILE CREATION TIME RETROACTIVELY CHANGED IN THE FILESYSTEM -->
